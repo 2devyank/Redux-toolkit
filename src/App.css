@@ -1,0 +1,29 @@
+.navabar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 70px;
+  background-color: blue;
+  align-items: center;
+}
+.left{
+  display: flex;
+  align-items: center;
+}
+.item{
+  border: 1px solid red;
+  display: flex;
+  height: 80px;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.rox{
+  display: flex;
+
+  gap: 10px;
+}
+.buts{
+  height: 40px;
+}
