@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 import Item from '../components/Item';
 
 const Home = () => {
@@ -20,6 +21,13 @@ const Home = () => {
         })
       }
 
+      </div>
+      <div className='tact'>
+
+      <button ><Link to="/bag">
+      Go to Cart
+      </Link>
+      </button>
       </div>
     </div>
   )

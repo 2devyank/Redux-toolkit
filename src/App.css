@@ -15,11 +15,22 @@
   border: 1px solid black;
 }
 
-.
+
 .buts{
   height: 40px;
 }
 table, th, td {
  width: 25%;
+ 
   /* border: 1px solid; */
+}
+.tact{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+ font-style: none;
+}
+.tact button{
+  padding:5px 5px ;
 }

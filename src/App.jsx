@@ -12,7 +12,7 @@ function App() {
   <Navd/>
   <Routes>
     <Route path="/" element={<Home/>} exact/>
-    <Route path="/Bag" element={<Bag/>} exact/>
+    <Route path="/bag" element={<Bag/>} exact/>
   </Routes>
   </BrowserRouter>
   )
