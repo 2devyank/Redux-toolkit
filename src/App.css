@@ -34,3 +34,7 @@ table, th, td {
 .tact button{
   padding:5px 5px ;
 }
+.total{
+  display: flex;
+  justify-content: space-between;
+}

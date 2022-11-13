@@ -1,6 +1,9 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { removeItem } from '../features/bag/bag';
 
 const Cart = ({ title, img, price, id }) => {
+    const dispatch=useDispatch();
   return (
     <table className="item">
       {/* <div className='rox'> */}
@@ -20,14 +23,15 @@ const Cart = ({ title, img, price, id }) => {
         </td>
         <td>
 
-         <button>Remove Item</button>
-        </td>
+<button>+</button>
+1
+<button>-</button>
+</td>
         <td>
 
-         <button>+</button>
-         1
-         <button>-</button>
+         <button onClick={()=>dispatch(removeItem({id}))}>Remove Item</button>
         </td>
+       
       </tr>
     </table>
   )
