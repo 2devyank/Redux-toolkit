@@ -9,7 +9,7 @@ const bagItems=[
         title:"Levi's jeans",
         img:jeans,
         amount:1,
-        price:"$500"
+        price:"500"
 
     },
     {
@@ -17,7 +17,7 @@ const bagItems=[
         title:"Denim jacket",
         img:jacket,
         amount:1,
-        price:"$600"
+        price:"600"
 
     },
     {
@@ -25,7 +25,7 @@ const bagItems=[
         title:"Fancy Tshirt",
         img:clothes,
         amount:1,
-        price:"$250"
+        price:"250"
 
     },
     {
@@ -33,7 +33,7 @@ const bagItems=[
         title:"Ray ban Sunglass",
         img:glasses,
         amount:1,
-        price:"$2500"
+        price:"2500"
 
     }
 ]

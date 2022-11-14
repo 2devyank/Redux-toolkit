@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import Cart from '../components/Cart';
 
 const Bag = () => {
-  const {totalcart} =useSelector((state)=>state.bag);
+  const {totalcart,total} =useSelector((state)=>state.bag);
   console.log(totalcart)
   return (
     <div>
@@ -20,7 +20,7 @@ const Bag = () => {
         <p>
           total
           </p>
-          <p>&23</p>
+          <p>${total}</p>
       </div>
 
     </div>

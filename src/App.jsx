@@ -3,9 +3,16 @@ import Navd from "./components/Navd"
 import Bag from "./pages/Bag"
 import Home from "./pages/Home"
 import "../src/App.css"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect } from "react"
+import { calculatetotal } from "./features/bag/bag"
 
 function App() {
-  
+  const {totalcart}=useSelector((store)=>store.bag)
+  const dispatch=useDispatch();
+  useEffect(()=>{
+    dispatch(calculatetotal());
+  },[totalcart])
 
   return (
   <BrowserRouter>
