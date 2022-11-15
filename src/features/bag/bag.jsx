@@ -41,5 +41,6 @@ const  bagSlice=createSlice({
       }
     }
 })
+console.log(bagSlice);
 export const {addtocart,removeItem,increaseitem,decreaseitem,totalamount}=bagSlice.actions
 export default bagSlice.reducer;

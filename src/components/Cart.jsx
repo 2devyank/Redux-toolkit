@@ -24,6 +24,7 @@ const Cart = ({ title, img, price, id ,amount}) => {
         <td>
 
 <button onClick={()=>dispatch(increaseitem({id}))}>+</button>
+
 {amount}
 <button onClick={()=>
   {if(amount===1){
