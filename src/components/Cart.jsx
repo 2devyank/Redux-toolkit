@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { removeItem } from '../features/bag/bag';
+import { decreaseitem, increaseitem, removeItem } from '../features/bag/bag';
 
-const Cart = ({ title, img, price, id }) => {
+const Cart = ({ title, img, price, id ,amount}) => {
     const dispatch=useDispatch();
   return (
     <table className="item">
@@ -19,13 +19,17 @@ const Cart = ({ title, img, price, id }) => {
         {/* </div> */}
 
         <td>
-          <p className='price'>{price}</p>
+          <p className='price'>${price}</p>
         </td>
         <td>
 
-<button>+</button>
-1
-<button>-</button>
+<button onClick={()=>dispatch(increaseitem({id}))}>+</button>
+{amount}
+<button onClick={()=>
+  {if(amount===1){
+    dispatch(removeItem({id}));
+  }
+  dispatch(decreaseitem({id}))}} >-</button>
 </td>
         <td>
 

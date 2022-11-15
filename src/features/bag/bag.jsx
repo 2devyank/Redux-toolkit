@@ -22,14 +22,14 @@ const  bagSlice=createSlice({
        state.totalcart=state.totalcart.filter((item)=>item.id!==payload.id);
       } ,
       increaseitem:(state,{payload})=>{
-        const cartitem=state.bagitem.filter((item)=>item.id!==payload.id)
-        cartitem.amount+=1;
+        const cartitem=state.totalcart.find((item)=>item.id===payload.id)
+        cartitem.amount=cartitem.amount+1;
       },
       decreaseitem:(state,{payload})=>{
-        const cartitem=state.bagitem.filter((item)=>item.id!==payload.id)
-        cartitem.amount-=1;
+        const cartitem=state.totalcart.find((item)=>item.id===payload.id)
+        cartitem.amount=cartitem.amount-1;
       },
-      calculatetotal:(state)=>{
+      totalamount:(state)=>{
         let amount=0;
         let total=0;
         state.totalcart.forEach((item)=>{
@@ -41,5 +41,5 @@ const  bagSlice=createSlice({
       }
     }
 })
-export const {addtocart,removeItem,increaseitem,decreaseitem,calculatetotal}=bagSlice.actions
+export const {addtocart,removeItem,increaseitem,decreaseitem,totalamount}=bagSlice.actions
 export default bagSlice.reducer;

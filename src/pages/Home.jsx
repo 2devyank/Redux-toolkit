@@ -6,7 +6,7 @@ import Item from '../components/Item';
 const Home = () => {
 
   const { bagitem ,amount} = useSelector((state) => state.bag)
-  console.log(bagitem);
+  // console.log(bagitem);
 
   return (
     <div className='home'>
